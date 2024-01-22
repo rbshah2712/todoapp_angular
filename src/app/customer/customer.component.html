@@ -1,0 +1,16 @@
+<form>
+    <label>First Name: </label>
+    <input type="text" #firstname/><br/><br/><br/>
+    <label>Last Name: </label>
+    <input type="text" #lastname/><br/><br/><br/>
+    <label>DOB: </label>
+    <input type="date" #dateofbirth/><br/><br/><br/>
+    <button (click)="fetch(firstname.value,lastname.value,dateofbirth.value)">Add Details</button>
+    
+</form>
+
+
+<h1>The values are:</h1>
+<p>Firstname : {{firstname1}}</p>
+<p>Lastname : {{lastname1}}</p>
+<p>DateofBirth: {{dateofbirth1}}</p>
